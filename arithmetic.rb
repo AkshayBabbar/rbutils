@@ -16,5 +16,19 @@ def primeSieve(n)
   return primes
 end
 
+def fib(n)
+  x=1
+  y=1
+  z=0
+  while z < n
+    z=x+y
+    x=y
+    y=z
+  end
+  return z
+end
+
 #test for primeSieve
 puts primeSieve(20)
+#test for fib
+puts fib(3)
