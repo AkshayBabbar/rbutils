@@ -28,7 +28,7 @@ class ToPrefix
     @output = []
   end
 
-  def convert_to_prefix(infix)
+  def prefix(infix)
     infix.split.reverse.each do |token|
       symbol = token.to_sym
     
