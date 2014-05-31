@@ -30,5 +30,6 @@ end
 
 #test for primeSieve
 puts primeSieve(20)
+
 #test for fib
 puts fib(3)
