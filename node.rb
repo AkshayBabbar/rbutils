@@ -15,5 +15,4 @@ class Node
   def to_str
     @name
   end
-  
 end

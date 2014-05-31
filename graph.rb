@@ -3,6 +3,7 @@ require 'set'
 class Graph
   attr_accessor :nodes
   attr_accessor :edges
+  attr_accessor :connections
 
   def initialize
     @nodes = Set.new
@@ -18,6 +19,12 @@ class Graph
   #adds an edge to the graph
   def add_edge(from, to, weight)
     edges << Edge.new(from, to, weight)
+  end
+  
+  #for BFS and DFS
+  def add_edge(n1, n2)
+    n1.adjacents << n2
+    n2.adjacents << n1
   end
   
   #connects two nodes in the graph
