@@ -2,20 +2,24 @@ class DFS
   def initialize(graph, source)
     @graph = graph
     @source = source
-    
-    @visited = Array.new
-    @edge_to = Set.new
-    
-    #perform depth first search on this node
+    @visited = []
+    @edge_to = {}
+
+    #perform dfs
     dfs(source)
   end
 
   def dfs(node)
+    #mark node as visited
     @visited << node
-    node.adjacents.each do |adjacent|
-      next if @visited.include?(adjacent)
-      dfs(adjacent)
-      @edge_to[adjacent] = node
+    
+    #take each adjacent node
+    node.adjacents.each do |adj|
+      next if @visited.include?(adj)
+      #perform dfs
+      dfs(adj)
+      #check edges
+      @edge_to[adj] = node
     end
   end
 
@@ -23,7 +27,9 @@ class DFS
     return unless @visited.include?(node)
     path = []
     curr = node
-
+    
+    #get the paths from the specified node to the 
+    #source
     while(curr != @source) do
       path.unshift(curr)
       curr = @edge_to[curr]
