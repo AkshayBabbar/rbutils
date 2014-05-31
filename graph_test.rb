@@ -1,6 +1,7 @@
 require_relative 'graph'
 require_relative 'node'
 require_relative 'edge'
+require_relative 'dfs'
 
 g = Graph.new
 
@@ -14,3 +15,10 @@ g.add_node(x)
 g.connect(x, n)
 puts g.degree(x)
 puts g.degree(n)
+
+dfs = DFS.new(g,n)
+t = dfs.path_to(n)
+
+t.each do |w|
+ puts w.to_str
+end
