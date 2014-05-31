@@ -10,6 +10,6 @@ class Edge
   end
 
   def to_str
-    "#{from.to_s} => #{to.to_s}, weight is #{weight}"
+    "#{from.to_str} => #{to.to_str}, weight is #{weight}"
   end
 end
