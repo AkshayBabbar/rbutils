@@ -9,7 +9,7 @@ class Node
   end
 
   def adjacent_edges
-    graph.edges.select{|e| e.from == self}
+    graph.edges.select{|e| e.source == self}
   end
 
   def to_str
