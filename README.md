@@ -10,6 +10,8 @@ Included as of 5/31/2014:
  -  Edge
  -  Breadth First Search
  -  Depth First Search
+ -  Dijkstra's Algorithm 
+  - Includes a basic implementation of a Priority Queue
 - Basic Parsing
  - Infix -> Prefix
  - Infix -> Postfix
