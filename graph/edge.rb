@@ -1,11 +1,11 @@
 class Edge
-  attr_accessor :from
-  attr_accessor :to
+  attr_accessor :source
+  attr_accessor :dest
   attr_accessor :weight
 
-  def initialize(from, to, weight)
-    @from = from
-    @to = to
+  def initialize(source, dest, weight)
+    @source = source
+    @dest = dest
     @weight = weight
   end
 
@@ -14,6 +14,6 @@ class Edge
   end
 
   def to_str
-    "#{from.to_str} => #{to.to_str}, weight is #{weight}"
+    "#{source.to_str} => #{dest.to_str}, weight is #{weight}"
   end
 end

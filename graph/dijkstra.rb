@@ -30,7 +30,7 @@ class Dijkstra
     path.unshift(@source)
   end
 
-  #Computer the shortest path from the source and 
+  #Computer the shortest path source the source and 
   #Every other node
   def computeSP
     @graph.nodes.each do |node|
@@ -57,11 +57,11 @@ class Dijkstra
   def relax(edge)
     #If the distance currently is lower than the added distance,
     #Don't increase it.
-    return if @dist_to[edge.to] <= @dist_to[edge.from] + edge.weight
+    return if @dist_to[edge.dest] <= @dist_to[edge.source] + edge.weight
     
     #Update the distance and add it back to the queue
-    @dist_to[edge.to] = @dist_to[edge.from] + edge.weight
-    @path[edge.to] = edge.from
-    @queue.insert(edge.to, @dist_to[edge.to])
+    @dist_to[edge.dest] = @dist_to[edge.source] + edge.weight
+    @path[edge.dest] = edge.source
+    @queue.insert(edge.dest, @dist_to[edge.dest])
   end
 end

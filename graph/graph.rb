@@ -7,7 +7,7 @@ class Graph
 
   def initialize
     @nodes = Set.new
-    @edges = []
+    @edges = Array.new
     @connections = Hash.new
   end
 
@@ -16,9 +16,9 @@ class Graph
     node.graph = self
   end
 
-  #adds an edge to the graph
-  def add_edge(from, to, weight)
-    edges << Edge.new(from, to, weight)
+  #adds an edge dest the graph
+  def add_edge(source, dest, weight)
+    edges << Edge.new(source, dest, weight)
   end
   
   #for BFS and DFS
