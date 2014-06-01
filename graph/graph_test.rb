@@ -18,8 +18,8 @@ g.add_node(y)
 
 puts "\n"       
 
-g.add_edge(x, y)
-g.add_edge(y, n)
+g.add_adjacency(x, y)
+g.add_adjacency(y, n)
 
 dfs = DFS.new(g,x)
 t = dfs.path_to(n)

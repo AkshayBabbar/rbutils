@@ -22,7 +22,7 @@ class Graph
   end
   
   #for BFS and DFS
-  def add_edge(n1, n2)
+  def add_adjacency(n1, n2)
     n1.adjacents << n2
     n2.adjacents << n1
   end
