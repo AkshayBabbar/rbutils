@@ -1,4 +1,4 @@
-require_relative "NeuralNetwork.rb"
+require_relative "neuralnetwork.rb"
 
 learning_rate = 10 #|rate|
 momentum_rate = 1 #|momentum|
