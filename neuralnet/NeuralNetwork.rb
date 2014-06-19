@@ -1,4 +1,4 @@
-class NeuralNetwork
+class neuralnetwork
 
     attr_accessor :inputs,                   
                   :n_inputs, 
