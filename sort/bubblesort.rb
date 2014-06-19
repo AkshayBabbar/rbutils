@@ -9,6 +9,7 @@ def bubblesort(array)
       end
     end
   end
+  return x
 end
 
 puts bubblesort([2, 5, 3, 4, 5])
