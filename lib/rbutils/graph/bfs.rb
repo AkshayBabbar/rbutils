@@ -1,4 +1,4 @@
-class BFS
+class BFS < Graph
   def initialize(graph, source)
     @graph = graph
     @node = source

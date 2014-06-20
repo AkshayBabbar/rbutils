@@ -1,6 +1,6 @@
 require_relative "priorityqueue"
 
-class Dijkstra
+class Dijkstra < Graph
   
   #source node and graph needed
   def initialize(graph, source)

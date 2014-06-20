@@ -1,4 +1,4 @@
-class DFS
+class DFS < Graph
   def initialize(graph, source)
     @graph = graph
     @source = source
