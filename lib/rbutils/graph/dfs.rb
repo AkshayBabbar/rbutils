@@ -1,3 +1,5 @@
+require_relative 'Graph'
+
 class DFS < Graph
   def initialize(graph, source)
     @graph = graph

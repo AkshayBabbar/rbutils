@@ -1,30 +1,29 @@
 #Quick Sort implementation in Ruby
 public
-def quicksort(array) 
-  if array.length <= 1
+def quicksort(array, l, r)
+  if r == -1
+    r = array.length - 1
+  end
+
+  if l == -1
+    l = 0
+  end
+
+  if (r - l) < 1
     return array
   else
-    pivot = array.sample
-    array.delete_at(array.index(pivot)) 
-    less = []
-    more = []
-    array.each do |x|
-      if x <= pivot
-        less << x
-      else
-        more << x
-      end
+    pivot = array[l]
+    i = l+1
+    for j in l+1..r
+        if array[j] < pivot
+            array[j], array[i] = array[i], array[j]
+            i += 1
+	end
     end
-    
-    sorted = []
-    sorted << self.quicksort(less)
-    sorted << pivot
-    sorted << self.quicksort(more)
-    
-    sorted.flatten! #make into one array
-    return sorted
+
+    array[l], array[i-1] = array[i-1], array[l]
+    array = quicksort(array, l, i-1)
+    array = quicksort(array, i, r)
+    return array
   end
 end
-
-puts quicksort([2, 5, 3, 4, 5])
-#output: 2 3 4 5 5 
