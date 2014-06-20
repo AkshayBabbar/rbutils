@@ -1,4 +1,4 @@
-require_relative 'Graph'
+require_relative 'graph'
 
 class DFS < Graph
   def initialize(graph, source)
