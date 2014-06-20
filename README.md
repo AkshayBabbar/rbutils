@@ -4,7 +4,7 @@ rbutils
 
 Based off primary mathematical principles, `rbutils` is a library that attempts to add advanced machine learning capabilities to ruby as well as provide numerous fast and efficient algorithms to enhance functionality.  
 
-Included as of 5/31/2014:
+Included as of gem version 0.0.1: 
 - Machine Learning
  - Neural Networks 
 - Graph Utilities 
@@ -20,3 +20,4 @@ Included as of 5/31/2014:
  - Infix -> Postfix
 - Sorting 
  - Quicksort
+ - Bubblesort
