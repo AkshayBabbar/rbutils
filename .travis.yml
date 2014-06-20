@@ -1,0 +1,6 @@
+language: ruby
+script: "ruby test.rb"
+rvm:
+  - 2.1.0
+branches:
+  only: master
