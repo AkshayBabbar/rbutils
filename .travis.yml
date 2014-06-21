@@ -1,5 +1,7 @@
 language: ruby
-script: "ruby test.rb"
+script: 
+  - gem install rbutils
+  - rake test
 rvm:
   - 2.1.0
 branches:

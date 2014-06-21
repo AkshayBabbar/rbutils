@@ -8,4 +8,3 @@ require_relative 'rbutils/graph/node'
 require_relative 'rbutils/graph/priorityqueue'
 require_relative 'rbutils/sort/bubblesort'
 require_relative 'rbutils/sort/quicksort'
-
