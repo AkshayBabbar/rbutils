@@ -1,6 +1,6 @@
 rbutils
 =========
-[![Gem Version](https://badge.fury.io/rb/rbutils.svg)](http://badge.fury.io/rb/rbutils) ![Travis CI Build Status](https://travis-ci.org/mananshah99/rbutils.svg?branch=master) [![Total Downloads](http://www.gemetric.me/images/rbutils.gif)](https://rubygems.org/gems/rbutils)
+[![Gem Version](https://badge.fury.io/rb/rbutils.svg)](http://badge.fury.io/rb/rbutils) ![Travis CI Build Status](https://travis-ci.org/mananshah99/rbutils.svg?branch=master) 
 
 Based off primary mathematical principles, `rbutils` is a library that attempts to add advanced machine learning capabilities to ruby as well as provide numerous fast and efficient algorithms to enhance functionality.  
 
